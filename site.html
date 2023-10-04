@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Grand Hotel|Montserrat">
+    <script src="https://kit.fontawesome.com/362991c868.js" crossorigin="anonymous"></script>
+    <style>
+        
+        body{
+            background-image: linear-gradient(135deg,gray,black);
+            display: flex;
+            align-items: center;
+            background-attachment: fixed;
+            flex-direction: column;
+        }
+        .grp1{
+            /* border: 1px solid black; */
+            width: 80%;
+            /* display: flex; */
+            justify-content: flex-start;
+            /* top: 0; */
+        }
+        .gd1{
+            width: 100%;
+            display: flex;
+        }
+        .gd1>img{
+            width: 100%;
+        }
+        .gd1>header{
+            position: absolute;
+            margin-left: 35%;
+        }
+        .gd1>header,a{
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+            word-spacing: 15px;
+            font-family: 'Segoe UI';
+        }
+        a:hover{
+            text-decoration: none;
+            background-color: transparent;
+            /* background-image:linear-gradient(-135deg,silver,rgba(36, 36, 36, 0.68)) ; */
+            border-bottom: 2px solid white;
+        }
+        .gd1>h1{
+            position: absolute;
+            font-family: 'Grand Hotel';
+            font-size: 125px;
+            color: #ffc200;
+            font-weight: 400; 
+            margin-left: 30%; 
+        }
+        .gd1>p{   
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            position: absolute;
+            margin-top: 20%;
+            margin-left: 34%;
+        }
+        .gd1>button{
+            position: absolute;
+            background-color: #ffc200;
+            border: none;
+            border-radius: 3px;
+            padding: 15px;
+            margin-top: 27%;
+            margin-left: 37%;
+            font-family: "Montserrat";
+            font-weight: 600;
+            width: 10%;
+        }
+        .gd1>button:hover{
+            /* background-color: white; */
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+        .grp2{
+            width: 80%;
+            /* border: 3px solid white; */
+            background-color: white;
+            
+            
+        }
+        .g2d1{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .g2d1>h2{
+            font-family: 'Grand Hotel';
+            font-size: 90px;
+            color:black;
+            font-weight: 200; 
+            text-align: center;
+           
+        }
+        .g2d1>p{
+            text-align: center;
+            font-weight: 700;
+            font-family: "Montserrat";
+            margin-top: -75px;
+        }
+        .g2d1i{
+            /* border: 1px solid black; */
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .g2d1iimg{
+            width: 28%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            margin-bottom:px;
+        }
+        .g2sdi{
+            /* border: 1px solid purple; */
+            width: 77%;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            
+            
+        }
+        .g2sdii{
+            border: 1px sollid red;
+            width: 90%;
+            /* border: 1px solid black; */
+            
+        }
+        .g2sdii>h2{
+            font-family: "Grand Hotel";
+            color: #333333;
+            text-align: center;
+        }
+        .g2sdii>p{
+            color: #333333;
+            font-weight: 400;
+            font-family: "Montserrat";
+            /* border: 1px solid green; */
+            margin-bottom: 0px;
+            
+        }
+        .grp4{
+            width: 80%;
+            /* border: 1px solid red; */
+            background-image: url('media files/img\ 4.jpg');
+            height: 500px;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .g4d1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #ffc400ab;
+            width: 100%;
+            height: inherit;
+        }
+        .g4d1>p{
+            font-weight: 600;
+            font-family: "Montserrat";
+            font-size: larger;
+            text-align: center;
+        }
+        .g4d1>h2{
+            margin-top: -3%;
+            font-size: 74px;
+            color: #333333;
+            font-weight: 400;
+            font-family: "Grand Hotel";
+            text-align: center;
+        }
+        .grp5{
+            width: 80%;
+            height: 500px;
+            /* border: 1px solid yellow; */
+            background-color: white;
+            position: relative;
+            display: flex;    
+            justify-content: center;
+            align-items: center;
+            background-image: url('media files/bg.JPG');
+            /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+            
+        }
+        .g5dm{
+            /* border: 1px solid black; */
+            margin-bottom: 60px;
+        }
+        .g5dm>h2{
+            font-size: 80px;
+            color: #333333;
+            font-weight: 600;
+            font-family: "Grand Hotel";
+            text-align: center;
+        }
+        .g5dm>p{
+            color: #000000;
+            font-weight: 600;
+            font-family: "Montserrat";
+            text-align: center;
+            margin-top: -80px;
+        }
+        label>button{
+            padding: 10px;
+            background-color: #ffc200;
+            border: none;
+            font-family: "Montserrat";
+            font-weight: 900;
+            font-size: large;
+            float: left;
+            width:31% ;
+            box-shadow: 4px 4px 5px silver;
+        }
+        label>button:hover{
+            color: white;
+            background-color: black;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .input1:focus{
+            outline: none;
+            border-left: 2px solid #ffc200;
+            border-bottom-left-radius:5px ;
+            border-top-left-radius: 5px;
+        }
+        .input1{
+            width: 63.4%;
+            padding: 10px;
+            float: left;
+            border: none;
+            box-shadow: 4px 4px 5px silver;
+            font-family: "Montserrat";
+            font-size: large;
+        }
+        .grp6{
+            /* border: 2px solid rgb(255, 75, 105); */
+            width: 80%;
+            background-color: rgb(36,36,36);
+            height: 500px;
+            display: flex;
+        }
+        .i{
+            /* border: 1px solid white; */
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .ii{
+            /* border: 1px solid white; */
+            width: 20%;
+            color: white;
+            font-family: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Montserrat";
+            flex-direction: column;
+        }
+        ul{
+            list-style-type: none;
+            font-weight: 400 !important;
+        }
+        ul>a{
+            text-decoration: none;
+        }
+        ul>li:hover{
+            text-decoration: underline;
+            cursor:pointer;
+        }
+        .is{
+            /* border: 1px solid yellow; */
+            width: 90%;
+            font-family: "Montserrat";
+            font-weight: 800;
+            color: white;
+        }
+        .is>p{
+            font-weight: 400;
+            text-align: left;
+        }
+        .is>i{
+            margin:0;
+            padding:0;
+        }
+        .is>a{
+            margin:3px;
+            padding:0;
+            text-decoration: none;
+        }
+        .is>a:hover{
+            /* text-decoration: none; */
+            border: 0px solid rgb(36, 36, 36);
+        }
+        .is2{
+            /* border: 1px solid green; */
+            width: 90%;
+            margin-bottom: 30px;
+        }
+        .grp3{
+            width: 80%;
+            height: 1200px;
+            /* border: 1px solid red; */
+        }
+        .g3d1{
+            width: 100%;
+            height: 300px;
+            /* border: 1px solid green; */
+            background-image: url('media files/wave4.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            position: relative;
+            align-items: flex-end;
+        }
+        .g3d1s1{
+            /* border: 1px solid yellow; */
+            width: 25%;
+            height: 20vw;
+            border-radius: 50%;
+            margin-left:5% ;
+            background-image: url('media files/sub\ div\ image1.jpg');
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .g3d1s2{
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+        }
+        .g3d1s2>h1{
+            font-family: "Grand Hotel";
+            font-size: 80px;
+            font-weight: 500;
+            color: #ffc200;
+            margin-left: 23%;
+            margin-bottom: -1%;
+        }
+        .g3d1s2>p{
+            font-family: "Montserrat";
+            color:#ffffff;
+            text-align: center;
+            font-weight:700 ;
+        }
+        .g3d1s2>button{
+            background-color: #ffc200;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            align-self: center;
+            opacity: 2.5;
+            font-family: "Montserrat";
+            font-weight: 600;
+            width: 30%;
+            
+        }
+        .g3d1s2>button:hover{
+            opacity: 0.5;
+            transition: 0.4s;
+        }
+        .g3d2{
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid yellow; */
+            background-color: #333333;
+            display: flex;
+            align-items: center;
+        }
+        .g3d2s1{
+            /* border: 3px solid pink; */
+            width: 100%;
+            height: 500px;
+            background-image: url('media files/Capture3.JPG');
+        }
+        .g3d2s1>h1{
+            font-family: "Grand Hotel";
+            font-size: 90px;
+            color: #ffc200;
+            text-align: center;
+            font-weight: 500;
+        }
+        .g3d2s1>p{
+            font-family: "Montserrat";
+            color: white;
+            font-weight: 400;
+            text-align: center;
+            margin-top: -5%;
+        }
+        .buttonsdiv{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            height:auto;
+            flex-wrap: wrap;
+        }
+        .buttonsdiv>button{
+            width: 20%;
+            height: 15vw;
+            border-radius: 50%;
+            border: 3px solid white;
+            background-color: #333333;
+            font-family:"Montserrat";
+            color:#ffc200;
+            font-weight: 900;
+        }
+        .buttonsdiv>button,h1{
+            font-family:"Montserrat";
+            color:#ffc200;
+            font-weight: 900;
+        }
+        .buttonsdiv>button,p{
+            color: white;
+            font: bold;
+            font-family: "Montserrat";
+        }
+        .g3d3{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            /* border: 1px solid rgb(255, 139, 158); */
+            background-color: white;
+            background-image: url('media files/wave\ 5.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* background-position: center; */
+        }
+        .g3d3s1{
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+        }
+        .g3d3s1>h1{
+            font-family: "Grand Hotel";
+            font-size: 80px;
+            font-weight: 500;
+            color: #ffc200;
+            margin-left: 20%;
+            margin-bottom: -1%;
+        }
+        .g3d3s1>p{
+            font-family: "Montserrat";
+            color:#000000;
+            text-align: center;
+            font-weight:700 ;
+        }
+        .g3d3s1>button{
+            background-color: #ffc200;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            align-self: center;
+            font-family: "Montserrat";
+            font-weight: 600;
+            width: 30%;
+        }
+        .g3d3s1>button:hover{
+            background-color: black;
+            color: white;
+        }
+        .g3d3s2{
+            margin-top: 3%;
+            /* border: 1px solid yellow; */
+            width: 25%;
+            height: 20vw;
+            border-radius: 50%;
+            margin-left:5% ;
+            background-image: url('media files/nuggets.jfif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">  
+        alert("WELCOME TO OUR WEBPAGE");  
+       </script>
+    <div class="grp1">
+        
+        <div class="gd1">
+            <header>
+                <nav>
+                    
+                    <a href="">Home</a>
+                    <a href="">Product</a>
+                    <a href="">Promo</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </nav>
+            </header>
+           <img src="media files/Capture1.JPG">
+           <h1>Pizza Stall</h1>
+           <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Optio neque accusamus culpa<br> inventore maiores.</p>
+           <button>
+               ORDER NOW
+           </button>
+        </div>
+    </div>
+
+    <div class="grp2">
+        <div class="g2d1">
+            <h2>BestSeller</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium<br> corporis illo perspiciatis ab</p>
+            <div class="g2d1i">
+                <div class="g2d1iimg">
+                    <div class="g2sdi">
+                        <img src="media files/Place Your Image Here (Double Click to Edit)1.jpg">
+                    </div>
+                    <div class="g2sdii">
+                        <h2>Nuggets</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio.
+                        </p>
+                    </div>
+                </div>
+                <div class="g2d1iimg">
+                    <div class="g2sdi">
+                        <img style="width: 100%;" src="media files/image 2.jpg">
+                    </div>
+                    <div class="g2sdii">
+                        <h2>Meat balls</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio.
+                        </p>
+                    </div>
+                </div>
+                <div class="g2d1iimg">
+                    <div class="g2sdi">
+                        <img style="width: 100%;" src="media files/image 1.jpg">
+                    </div>
+                    <div class="g2sdii">
+                        <h2>
+                            Shrimps&Pasta
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g2d2"></div>
+    </div>
+
+             <!--EXTRA DIV-->
+    
+             <!--EXTRA DIV-->
+
+    <div class="grp3">
+        <div class="g3d1">
+            
+           <div class="g3d1s1">
+           </div>
+           <div class="g3d1s2">
+             <h1>
+               Original Taste
+             </h1>
+             <p>
+              Lorem ipsum dolor sit amet consectetur<br>adipisicing elit. Veniam laborum maxime<br> rerum ad    repellendus.
+             </p>
+             <button>
+                ORDER NOW
+             </button>
+           </div>
+        </div>
+        <div class="g3d2">
+            <div class="g3d2s1">
+                <h1>Statistics</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Officia<br>quaerat. Deleniti laborum aspernatur reiciendis.</p>
+                <div class="buttonsdiv">
+                    <button>
+                        <h1>
+                            125
+                        </h1>
+                        <p>
+                            <b>OUTLETS</b>
+                        </p>
+                    </button>
+                    <button>
+                        <h1>
+                            100
+                        </h1>
+                        <p>
+                            <b>CHEFs</b>
+                        </p>
+                    </button>
+                    <button>
+                        <h1>
+                            550+
+                        </h1>
+                        <p>
+                            <b>MENU</b>  
+                        </p>
+                    </button>
+                    <button>
+                        <h1>
+                            42
+                        </h1>
+                        <p>
+                            <b>COUNTRIES</b>
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="g3d3">
+            <div class="g3d3s1">
+                <h1>
+                  Chicken Nuggets
+                </h1>
+                <p>
+                 Lorem ipsum dolor sit amet consectetur<br>adipisicing elit. Veniam laborum maxime<br> rerum ad    repellendus.
+                </p>
+                <button>
+                   ORDER NOW
+                </button>
+              </div>
+              <div class="g3d3s2">
+
+              </div>
+        </div>
+    </div>
+    <div style="height: 100px;width: 80%;background-color: #ffffff;"></div>
+
+    <div class="grp4">
+           <div class="g4d1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Officia aspernatur iure<br> provident vel et
+            </p>
+            <h2>
+                Lenora Fields
+            </h2>
+           </div>
+    </div>
+
+    <div class="grp5">
+        <div class="g5dm">
+            <h2>
+                Subscribe
+            </h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit<br> Laudantium ab asperiores rerum ipsam dolor!
+            </p>
+            <form action="">
+                    <input class="input1" type="email" placeholder="Type-in Your Email" required>
+                    <label for="Subscription">
+                        <button>SUBSCRIBE</button>
+                    </label>
+            </form>
+        </div>
+    </div>
+    <div class="grp6">
+        <div class="i">
+            <div class="is">
+                <h4>
+                    CONTACT US.
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nulla dolor temporibus nihil voluptate.
+                </p>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                <a><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;" ></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="is2"></div>
+        </div>
+        <div class="ii">
+            <h4>ABOUT</h4>
+            <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>brand Guidelines</li>
+                <li>Terms&Conditions</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="ii">
+            <h4>SERVICES</h4>
+            <ul>
+                <li>How to Order</li>
+                <li>Our Product</li>
+                <li>Order Status</li>
+                <li>Promo</li>
+                <li>Payment Method</li>
+                
+            </ul>
+        </div>
+        <div class="ii">
+            <h4>OTHERS</h4>
+            <ul style="margin-bottom: 57px;">
+                  <li>Contact Us.</li>
+                  <li>Help</li>
+                  <li>Privacy</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
